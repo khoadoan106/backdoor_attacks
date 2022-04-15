@@ -1,0 +1,17 @@
+source activate bd_lira
+
+jupyter contrib nbextension install --user
+jupyter nbextension enable codefolding/main
+jupyter nbextension enable autosavetime/main
+jupyter nbextension enable code_prettify/code_prettify
+jupyter nbextension enable codefolding/main
+jupyter nbextension enable collapsible_headings/main
+jupyter nbextension enable scroll_down/main
+jupyter nbextension enable codefolding/edit
+jupyter nbextension enable execute_time/ExecuteTime
+jupyter nbextension enable freeze/main
+
+export LD_LIBRARY_PATH=/usr/local/cuda-11.1/lib64/:/usr/local/cuda-11.1/extras/CUPTI/lib64/:${LD_LIBRARY_PATH}
+
+# start a jupyter notebook and bind port 888N where N is ID of the reserved GPU card
+jupyter notebook --ip='0.0.0.0' --port=889${1} --no-browser
