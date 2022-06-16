@@ -46,3 +46,14 @@ Clone the repository. The setup script to initialize and activate the environmen
         . etc/setup_env
         nohup python python/lira_backdoor_injection.py --dataset cifar10 --clsmodel vgg11 --path experiments/ --epochs 50 --train-epoch 1 --mode all2one --target_label 0 --epochs_per_external_eval 10 --cls_test_epochs 5 --verbose 2 --batch-size 128 --alpha 0.5 --eps 0.1 --avoid_cls_reinit --test_eps 0.01 --test_alpha 0.5 --test_epochs 500 --test_lr 0.01 --schedulerC_lambda 0.1 --schedulerC_milestones 100,200,300,400 2>&1 >experiments/logs/cifar10_backdoor_injection.log &		
         ```
+        
+Please cite the paper, as below, when using this repository:
+```
+@inproceedings{doan2021lira,
+  title={Lira: Learnable, imperceptible and robust backdoor attacks},
+  author={Doan, Khoa and Lao, Yingjie and Zhao, Weijie and Li, Ping},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={11966--11976},
+  year={2021}
+}
+```
