@@ -19,9 +19,6 @@ Clone the repository. The setup script to initialize and activate the environmen
 
 ## Implementations
 
-
-
-
 ### LIRA: Learnable, Imperceptible and Robust Backdoor Attacks (ICCV2021).  
 * [Paper](https://openaccess.thecvf.com/content/ICCV2021/html/Doan_LIRA_Learnable_Imperceptible_and_Robust_Backdoor_Attacks_ICCV_2021_paper.html)
 * Stage 1: Trigger Generation - LIRA learns to generate the trigger in Stage 1. Examples:
@@ -56,4 +53,11 @@ Please cite the paper, as below, when using this repository:
   pages={11966--11976},
   year={2021}
 }
+```
+
+### Marksman Backdoor: Backdoor Attacks with Arbitrary Target Class (NeurIPS2022).
+* [Paper](https://openreview.net/pdf?id=i-k6J4VkCDq)
+
+```diff
+- The implementation will be added soon!
 ```
