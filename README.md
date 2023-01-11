@@ -23,7 +23,7 @@ Clone the repository. The setup script to initialize and activate the environmen
 * [Paper](https://openreview.net/pdf?id=i-k6J4VkCDq)
 
 ```diff
-- The implementation will be added soon in December 2022!
+Please refer to marksman_conditional_trigger_generation.py and marksman_conditional_backdoor_injection.py
 ```
 
 ### LIRA: Learnable, Imperceptible and Robust Backdoor Attacks (ICCV2021).  
